@@ -14,11 +14,10 @@ import Profile from "./pages/profile/Profile";
 import "./style.scss"
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
-// import { AuthContext } from "./context/authContext";
+import Footer from "./componets/footer/Footer";
 
 
 function App() {
-  // const {currentUser} = useContext(AuthContext);
 
   const {darkMode} = useContext(DarkModeContext)
 
@@ -33,16 +32,11 @@ function App() {
           </div>
           <RightBar />
         </div>
+        <Footer />
       </div>
     )
   }
 
-  // const ProtectedRoute = ({ children}) => {
-  //   if (currentUser) {
-  //     return <Navigate to="/login" />;
-  //   }
-  //   return children;
-  // };
 
   const router = createBrowserRouter([
     {
@@ -58,10 +52,6 @@ function App() {
           element: <Profile />,
         },
       ],
-    },
-    {
-      path:"/",
-      element: <Layout />
     },
         {
           path: "/login",
