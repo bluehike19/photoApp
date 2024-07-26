@@ -2,12 +2,22 @@
 
 .post {
     @include themify($themes) {
+        border-radius: 20px;
+        background-color: themed("bg");
+        color: themed("textColor");
+        
 
         .container {
+            padding: 20px;
 
             .user {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
                 .userInfo {
+                    display: flex;
+                    gap: 20px;
 
                     img {
                         width: 40px;
