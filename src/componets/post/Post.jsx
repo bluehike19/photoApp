@@ -1,7 +1,22 @@
+import { Link } from "react-router-dom"
 import "./post.scss"
-const Post = () => {
+
+const Post = ({post}) => {
   return (
-    <div>Post</div>
+    <div className="post">
+        <div className="container">
+            <div className="user">
+                <div className="userInfo">
+                    <img src={Post.profilePic} alt="" />
+                    <div className="details">
+                        <Link to={`/profile/${post.userId}`} style={{ textDecoration: "none", color: "inherit"}}>
+                        <span className="name">{post.name}</span>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   )
 }
 
