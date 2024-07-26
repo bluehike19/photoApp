@@ -7,13 +7,13 @@ const Posts = () => {
             id: 1,
             name: "John Doe",
             userId: 1,
-            profilePic: "src/assets/ps-projects/cook.jpg"
+            profilePic: "src/assets/ps-projects/bhike.png"
         },
         {
             id: 2,
             name: "John Doe",
             userId: 2,
-            profilePic: "src/assets/ps-projects/bluehike.png"
+            profilePic: "src/assets/ps-projects/Untitled-4.png"
         },
     ];
 
