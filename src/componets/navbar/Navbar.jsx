@@ -15,7 +15,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none"}}>
-        <span>blueHike</span>
+        <span>
+          <img src="src/assets/ps-projects/complete/3.jpg" alt="" />
+        </span>
         </Link>
         <IoHomeOutline />
         <div className="darkmode">
